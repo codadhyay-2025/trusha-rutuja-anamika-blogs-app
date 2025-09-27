@@ -1,0 +1,49 @@
+.dashboardInnerPortion {
+    background-color: lightgrey;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.dashboardDetailsCard {
+    background-color: rgb(247, 244, 244);
+    width: 70%;
+    height: 25vh;
+    border-radius: 3px;
+    margin: auto;
+    /* margin-top: 20px; */
+    padding: 20px 10px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.blogsTitle {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: oblique;
+    margin-bottom: 5px;
+}
+
+.blogsMotive {
+    font-size: 18px;
+    font-weight: 400;
+    /* font-style: oblique; */
+}
+.buttonClass{
+    display: flex;
+    justify-content: end;
+}
+.loginButton {
+    background-color: rgb(20, 20, 133);
+    color:white ;
+    padding:10px ;
+    border-radius:5px ;
+    border: none;
+}
+
+.registerButton {
+    background-color: rgb(20, 20, 133);
+    color:white ;
+    padding:10px ;
+    border-radius:5px ;
+    border: none;
+    margin-left: 10px;
+}
