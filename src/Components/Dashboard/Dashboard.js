@@ -12,8 +12,8 @@ function Dashboard() {
                         <div className="blogsMotive">Publish your passions,your way...</div>
                         <hr />
                         <div className="buttonClass">
-                            <button className="loginButton">Login</button>
-                            <button className="registerButton">Register</button>
+                            <button className="dashboardLoginButton">Login</button>
+                            <button className="dashboardRegisterButton">Register</button>
                         </div>
                     </div>
 
