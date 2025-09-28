@@ -23,7 +23,7 @@
 }
 
 .blogsMotive {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     /* font-style: oblique; */
 }
@@ -32,7 +32,7 @@
     justify-content: end;
 }
 .dashboardLoginButton {
-    background-color: rgb(20, 20, 133);
+    background-color: rgb(112, 4, 42);
     color:white ;
     padding:10px ;
     border-radius:5px ;
@@ -40,7 +40,7 @@
 }
 
 .dashboardRegisterButton {
-    background-color: rgb(20, 20, 133);
+    background-color: rgb(112, 4, 42);
     color:white ;
     padding:10px ;
     border-radius:5px ;
