@@ -1,7 +1,7 @@
 .dashboardInnerPortion {
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     height: 100vh;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 .dashboardDetailsCard {
@@ -12,7 +12,7 @@
     margin: auto;
     /* margin-top: 20px; */
     padding: 20px 10px;
-    box-shadow: 10px 10px 5px #aaaaaa;
+    /* box-shadow: 10px 10px 5px #aaaaaa; */
 }
 
 .blogsTitle {
@@ -32,7 +32,7 @@
     justify-content: end;
 }
 .dashboardLoginButton {
-    background-color: rgb(112, 4, 42);
+    background-color: rgb(4, 87, 112);
     color:white ;
     padding:10px ;
     border-radius:5px ;
@@ -40,7 +40,7 @@
 }
 
 .dashboardRegisterButton {
-    background-color: rgb(112, 4, 42);
+    background-color: rgb(4, 87, 112);
     color:white ;
     padding:10px ;
     border-radius:5px ;
