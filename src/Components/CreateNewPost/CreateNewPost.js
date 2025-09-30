@@ -1,5 +1,6 @@
 import "./CreateNewPost.css"
 function CreateNewPost(){
+    
     return (
         <div className="mainSectionOfCreateNewPost">
             <div className="cardOfCreateNewPost">
