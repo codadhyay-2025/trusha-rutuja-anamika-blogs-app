@@ -5,7 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-background-color: rgb(228, 231, 231);
+/* background-color: rgb(184, 191, 191); */
+/* background-image:url('https://img.freepik.com/premium-vector/science-technology-engineering-math-blue-horizontal-frame_104589-4476.jpg') ; */
+/* opacity: 0.2; */
+background-image:url('https://img.freepik.com/free-vector/hand-drawn-pattern-design-back-school-season_23-2150542623.jpg?semt=ais_incoming&w=740&q=80')
 
 }
 
