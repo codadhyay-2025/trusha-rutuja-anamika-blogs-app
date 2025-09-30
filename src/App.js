@@ -4,6 +4,9 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Header from './Components/Header/Header';
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
+import Blogs from './Components/Dashboard/Blogs/Blogs';
+import CreateNewPost from './Components/CreateNewPost/CreateNewPost';
+
 import{BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
 function App() {
@@ -15,11 +18,12 @@ function App() {
         <Route path='/' element={<Dashboard/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/blogs' element={<Blogs/>}/>
+
+        <Route path='/createnewpost' element={<CreateNewPost/>}/>
+
       </Routes>
       </Router>
-      {/* <Dashboard /> */}
-      {/* <Register/> */}
-      {/* <Login/> */}
 
 
     </div>
