@@ -18,14 +18,13 @@ function App() {
         <Route path='/' element={<Dashboard/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/blogs' element={<Blogs/>}/>
+
+        <Route path='/createnewpost' element={<CreateNewPost/>}/>
+
       </Routes>
       </Router>
-      <Dashboard />
-      <Register/>
-      <Login/>
-      <CreateNewPost/>
-      
-      <Blogs/>
+
 
     </div>
 
