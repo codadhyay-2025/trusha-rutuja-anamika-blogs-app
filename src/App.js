@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import Dashboard from './Components/Dashboard/Dashboard';
-import Header from './Components/Dashboard/Header/Header';
-import Register from './Component/Register/Register';
-import Login from './Component/Login/Login';
+import Header from './Components/Header/Header';
+import Register from './Components/Register/Register';
+import Login from './Components/Login/Login';
 import{BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
 function App() {
