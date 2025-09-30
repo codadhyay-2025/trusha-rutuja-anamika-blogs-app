@@ -1,58 +1,73 @@
-.loginBox{
-    width:25%;
-    margin:auto;
-    border:1px solid black;
+.backgroundColor {
+
+    /* position: absolute;
+    background-size: cover;
+    inset: 0px; */
+    /* opacity: 0.5; */
+    
+}
+
+.loginBox {
+    width: 25%;
+    margin: auto;
+    border: 1px solid black;
     margin-top: 30px;
     background-color: rgb(246, 243, 246);
     padding: 5px 10px;
     padding-bottom: 150px;
     border: none;
     border-radius: 5px;
-    box-shadow:3px 3px 3px 3px rgb(174, 172, 172);
+    /* box-shadow: 3px 3px 3px 3px rgb(174, 172, 172); */
 }
-.loginBlog{
+
+.loginBlog {
     font-size: 25px;
     font-weight: 700;
     color: black;
     margin-top: 20px;
 }
-.loginContent{
+
+.loginContent {
     font-size: 13px;
     margin-top: 5px;
-    
+
 }
-.login{
+
+.login {
     text-align: center;
-    color:navy;
+    color: navy;
     font-size: 30px;
     font-weight: 700;
     margin-top: 15px;
 }
-.loginFeild{
+
+.loginFeild {
     font-size: 13px;
     margin-top: 10px;
     margin-top: 15px;
-   font-weight: 500;
+    font-weight: 500;
 
 }
-.loginInputFeild{
+
+.loginInputFeild {
     padding: 7px;
-    width:95%;
+    width: 95%;
     border: none;
     border-radius: 5px;
     margin-top: 5px;
     font-size: 12px;
 
 }
-.loginButton{
-    width:100%;
+
+.loginButton {
+    width: 100%;
     padding: 10px;
     /* background-color: rgb(93, 93, 165); */
-        background-color: rgb(95, 4, 25);
+    background-color: rgb(95, 4, 25);
 
     color: white;
     text-align: center;
-    border:none;
+    border: none;
     margin-top: 20px;
     border-radius: 5px;
     font-weight: bold;
