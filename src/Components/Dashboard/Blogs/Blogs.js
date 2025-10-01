@@ -1,13 +1,19 @@
 import "./Blogs.css"
+import { useNavigate } from "react-router-dom";
+
 function Blogs() {
+    const navigate =useNavigate();
+    const navigateToCreateNewPost = ()=>{
+        navigate ("/createnewpost");
+    }
     return (
         <div className="mainSectionOfBlogsPage">
             <div className='headSectionOfNewPost'>
                 <div className='btnAndTitleSection'>
                     <div className='headTitleOfNewPost'>Blogs</div>
                     <div>
-                        <button className='createNewPostBtn'>
-                            <i className="fa fa-plus-circle writingIcon" aria-hidden="true"></i> Create new post
+                        <button className='createNewPostBtn' onClick={navigateToCreateNewPost}>
+                            <i className="fa fa-plus-circle writingIcon" aria-hidden="true"></i> Create new post 
                         </button>
                     </div>
                 </div>

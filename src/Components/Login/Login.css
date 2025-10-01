@@ -1,28 +1,10 @@
-.backgroundColor :before {
-
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-
-    background-size: cover;
-    
-}
-
-/* position: absolute;
-    background-size: cover;
-    inset: 0px; */
-
 
 
 .loginBox {
     width: 25%;
     margin: auto;
     border: 1px solid black;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background-color: rgb(246, 243, 246);
     padding: 5px 10px;
     padding-bottom: 150px;
@@ -36,6 +18,7 @@
     font-weight: 700;
     color: black;
     margin-top: 20px;
+    font-style: oblique;
 }
 
 .loginContent {
@@ -46,7 +29,7 @@
 
 .login {
     text-align: center;
-    color: navy;
+    color:  rgb(52, 97, 140);
     font-size: 30px;
     font-weight: 700;
     margin-top: 15px;

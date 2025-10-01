@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function Login(){
     const navigate = useNavigate();
-    const navigateToLogin = () => {
+    const navigateToBlogs = () => {
         navigate("/blogs")
     }
 
@@ -24,7 +24,7 @@ function Login(){
                     <input type="Password" placeholder="Password" className="loginInputFeild"/>
                 </div>
                 <div>
-                    <button className="loginButton" onClick={navigateToLogin}>Login</button>
+                    <button className="loginButton" onClick={navigateToBlogs}>Login</button>
                 </div>
             </div>
         </div>
