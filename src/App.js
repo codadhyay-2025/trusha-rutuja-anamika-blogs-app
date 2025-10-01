@@ -4,7 +4,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Header from './Components/Header/Header';
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
-import Blogs from './Components/Dashboard/Blogs/Blogs';
+import Blogs from './Components/Blogs/Blogs';
 import CreateNewPost from './Components/CreateNewPost/CreateNewPost';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
