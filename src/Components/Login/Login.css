@@ -36,6 +36,7 @@
     font-weight: 700;
     color: black;
     margin-top: 20px;
+    font-style: oblique;
 }
 
 .loginContent {
@@ -46,7 +47,7 @@
 
 .login {
     text-align: center;
-    color: navy;
+    color:  rgb(52, 97, 140);
     font-size: 30px;
     font-weight: 700;
     margin-top: 15px;
