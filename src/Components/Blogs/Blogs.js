@@ -43,7 +43,7 @@ function Blogs() {
                 </div>
             </div>
 
-            return(
+            {/* return( */}
             <div>
                 {blogsdata.map((singleblog) => (
                     <div key={singleblog.id} className="blogCard">
@@ -68,7 +68,7 @@ function Blogs() {
                     </div>
                 ))}
             </div>
-            )
+            {/* ) */}
         </div>
     )
 }
