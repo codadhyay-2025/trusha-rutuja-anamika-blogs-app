@@ -7,15 +7,31 @@ function Blogs() {
     const navigateToCreateNewPost = () => 
         navigate("/createnewpost");
         
-        const [blogsdata, setBlogsData] = useState([]);
+        // const [blogsdata, setBlogsData] = useState([]);
     
     
-    const blogs= [
+     const blogs= [
         {
             id: 1,
             title: "Hello World",
             createdBy: "ishwari.kanase@gmail.com",
-            createdAt: "1st Dec, 2021"
+            createdAt: "1st Dec, 2021",
+            description:"wsexdrcfvtgybhnujmk,ledrftvgybhnujmk,l"
+            
+        },
+        {
+            id: 2,
+            title: "Hello India",
+            createdBy: "ishwari.kanaseee@gmail.com",
+            createdAt: "2st Dec, 2021"
+            
+        },
+        {
+            id: 1,
+            title: "Hello World",
+            createdBy: "ishwari.kanase@gmail.com",
+            createdAt: "1st Dec, 2021",
+            description:"wsexdrcfvtgybhnujmk,ledrftvgybhnujmk,l"
             
         },
         {
@@ -43,13 +59,13 @@ function Blogs() {
                 </div>
             </div>
 
-            return(
+            {/* return( */}
             <div>
-                {blogsdata.map((singleblog) => (
+                {blogs.map((singleblog) => (
                     <div key={singleblog.id} className="blogCard">
                         <div className="titleOfBlogsPage">{singleblog.title}</div>
                         <div><strong>Created By</strong><em> {singleblog.createdBy}</em></div>
-                        <div><strong>Created At </strong><em>{singleblog.craetedAt}</em></div>
+                        <div><strong>Created At </strong><em>{singleblog.createdAt}</em></div>
                         <hr />
                         <div>
                             {singleblog.description}
@@ -68,7 +84,7 @@ function Blogs() {
                     </div>
                 ))}
             </div>
-            )
+            {/* ) */}
         </div>
     )
 }

@@ -1,0 +1,102 @@
+.mainSectionOfBlogsPage {
+    height: 100vh;
+    margin: 0px;
+}
+
+.headSectionOfNewPost {
+
+    width: 61%;
+    margin: auto;
+}
+
+.btnAndTitleSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headTitleOfNewPost {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.createNewPostBtn {
+    padding: 7px 20px;
+    color: navy;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+
+.blogCard {
+    width: 61%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.titleOfBlogsPage {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+em {
+    color: rgb(74, 74, 74)
+}
+
+.likeAndDislikeBtn {
+    display: flex;
+    gap: 10px;
+}
+
+.btnSectionOfBlog {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.thumbsUpIcon {
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.thumbsDownIcon {
+    padding: 10px 14px;
+    border-radius: 4px;
+    background-color: rgb(248, 248, 19);
+    border: none;
+    color: white;
+
+}
+
+.editBtn {
+    padding: 9px 17px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(2, 77, 2);
+    border-radius: 4px;
+}
+
+.deleteBtn {
+    padding: 9px 17px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: red;
+    border-radius: 4px;
+
+
+}
+
+.writingIcon {
+    margin-right: 5px;
+}
