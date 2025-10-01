@@ -8,7 +8,10 @@ function CreateNewPost(){
                         <input type="text" placeholder="Title" className="titleOfCreateNewPost"/>
                     </div>
                     <div>
-                        <textarea className="textareaField" placeholder="Description" rows={20}>Description</textarea>
+                        <textarea type="text"  
+                        placeholder="Description" 
+                        rows={20}
+                            className="textareaField"></textarea>
                     </div>
                     <div className="btnSection">
                         <div><button className="btnOfCreateNewPost">Cancel</button></div>
