@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Blogs.css"
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 function Blogs() {
     const navigate = useNavigate();
@@ -8,7 +8,6 @@ function Blogs() {
         navigate("/createnewpost");
         
         const [blogsdata, setBlogsData] = useState([]);
-        const {id} = useParams();
     
     
     const blogs= [
@@ -46,14 +45,14 @@ function Blogs() {
 
             return(
             <div>
-                {blogsdata.map((blogs) => (
-                    <div key={blogs.id} className="blogCard">
-                        <div className="titleOfBlogsPage">{blogs.title}</div>
-                        <div><strong>Created By</strong><em> {blogs.createdBy}</em></div>
-                        <div><strong>Created At </strong><em>{blogs.craetedAt}</em></div>
+                {blogsdata.map((singleblog) => (
+                    <div key={singleblog.id} className="blogCard">
+                        <div className="titleOfBlogsPage">{singleblog.title}</div>
+                        <div><strong>Created By</strong><em> {singleblog.createdBy}</em></div>
+                        <div><strong>Created At </strong><em>{singleblog.craetedAt}</em></div>
                         <hr />
                         <div>
-                            {blogs.description}
+                            {singleblog.description}
                         </div>
                         <div className="btnSectionOfBlog">
                             <div className="likeAndDislikeBtn">

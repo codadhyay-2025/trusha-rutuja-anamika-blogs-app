@@ -6,23 +6,7 @@ function Register(){
         navigate("/login");
     }
     
-    const [userdata,setUserData]=useState({name:"",email:"",password:""});
-
-  function handleNameChange(event) {
-     let user={...userdata}
-    user["name"]=event.target.value;
-    setUserData(user)
-  }
-   function handleEmailChange(event) {
-     let user={...userdata}
-    user["email"]=event.target.value;
-    setUserData(user)
-  }
-   function handlePasswordChange(event) {
-     let user={...userdata}
-    user["password"]=event.target.value;
-    setUserData(user)
-  }
+    
     return(
      <div className="backgroundColor">
             <div className="registerBox">
@@ -32,15 +16,15 @@ function Register(){
                 <div className="register">Register</div>
                 <div className="registerFeild">Name</div>
                 <div>
-                    <input type="text"  placeholder="Firstname Lastname" className="registerInputFeild" value={userdata.name} onChange={handleNameChange} />
+                    <input type="text"  placeholder="Firstname Lastname" className="registerInputFeild"  />
                 </div>
                 <div className="registerFeild">Email-ID</div>
                 <div>
-                    <input type="text" placeholder="test@gmail.com" className="registerInputFeild" value={userdata.email} onChange={handleEmailChange}/>
+                    <input type="text" placeholder="test@gmail.com" className="registerInputFeild" />
                 </div>
                 <div className="registerFeild">Password</div>
                 <div>
-                    <input type="Password" placeholder="Password" className="registerInputFeild" value={userdata.password} onChange={handlePasswordChange}/>
+                    <input type="Password" placeholder="Password" className="registerInputFeild" />
                 </div>
                 <div>
                     <button className="registerButton"onClick={navigateToRegister}>Register</button>
