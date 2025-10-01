@@ -7,22 +7,20 @@ import Login from './Components/Login/Login';
 import Blogs from './Components/Dashboard/Blogs/Blogs';
 import CreateNewPost from './Components/CreateNewPost/CreateNewPost';
 
-import{BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Router>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Dashboard/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/register' element={<Register/>}/>
-        <Route path='/blogs' element={<Blogs/>}/>
-
-        <Route path='/createnewpost' element={<CreateNewPost/>}/>
-
-      </Routes>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Dashboard />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/blogs' element={<Blogs />} />
+          <Route path='/createnewpost' element={<CreateNewPost />} />
+        </Routes>
       </Router>
 
 
