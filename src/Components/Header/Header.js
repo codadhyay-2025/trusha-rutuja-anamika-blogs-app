@@ -1,17 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import "./Header.css"
 function Header() {
-    const navigate=useNavigate();
-    const navigateToDashboard=()=>{
+    const navigate = useNavigate();
+    const navigateToDashboard = () => {
         navigate("/");
     }
-    const navigateToRegister=()=>{
+    const navigateToRegister = () => {
         navigate("/register");
     }
-    const navigateToLogin=()=>{
+    const navigateToLogin = () => {
         navigate("/login");
     }
-    
+
     return (
         <div>
             <div className="headerSection">

@@ -8,27 +8,27 @@ function Register() {
     //     navigate("/login");
     // }
 
-    const [userRegistration, setUserRegistration] = useState({ email: "", password: "", name: "" })
-   
+    const [userdata, setUserData] = useState({ email: "", password: "", name: "" })
+
     function handleEmail(event) {
-        let user = { ...userRegistration };
+        let user = { ...userdata };
         user["email"] = event.target.value
-        setUserRegistration(user)
+        setUserData(user)
     }
     function handlePass(event) {
-        let user = { ...userRegistration };
+        let user = { ...userdata };
         user["password"] = event.target.value
-        setUserRegistration(user)
+        setUserData(user)
     }
     function handleName(event) {
-        let user = { ...userRegistration };
+        let user = { ...userdata };
         user["name"] = event.target.value
-        setUserRegistration(user)
+        setUserData(user)
     }
     const handleRegistrationData = () => {
-        axios.post("http://localhost:3001/users", userRegistration)
+        axios.post("http://localhost:3001/user", userdata)
             .then((response) => {
-                console.log(userRegistration);
+                console.log(userdata);
 
                 console.log("User saved:", response.data);
                 navigate("/login");
@@ -46,15 +46,19 @@ function Register() {
                 <div className="register">Register</div>
                 <div className="registerFeild">Name</div>
                 <div>
-                    <input type="text" placeholder="Firstname Lastname" className="registerInputFeild" value={userRegistration.name} onChange={handleName} />
+                    <input type="text"
+                        placeholder="Firstname Lastname"
+                        className="registerInputFeild"
+                        value={userdata.name}
+                        onChange={handleName} />
                 </div>
                 <div className="registerFeild">Email-ID</div>
                 <div>
-                    <input type="text" placeholder="test@gmail.com" className="registerInputFeild" value={userRegistration.email} onChange={handleEmail} />
+                    <input type="text" placeholder="test@gmail.com" className="registerInputFeild" value={userdata.email} onChange={handleEmail} />
                 </div>
                 <div className="registerFeild">Password</div>
                 <div>
-                    <input type="Password" placeholder="Password" className="registerInputFeild" value={userRegistration.password} onChange={handlePass} />
+                    <input type="Password" placeholder="Password" className="registerInputFeild" value={userdata.password} onChange={handlePass} />
                 </div>
                 <div>
                     <button className="registerButton" onClick={handleRegistrationData}>Register</button>
