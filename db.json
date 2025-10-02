@@ -1,6 +1,7 @@
 {
   "user": [
     {
+<<<<<<< HEAD
       "id": "4e41",
       "email": "dfiuie",
       "password": "567",
@@ -8,17 +9,25 @@
     },
     {
       "id": "cd64",
+=======
+      "id": "6912",
+>>>>>>> 7042ae1902e836452e91fb8ee2fa40fd90e4d4a4
       "email": "",
       "password": "",
       "name": ""
     },
     {
+<<<<<<< HEAD
       "id": "41ae",
+=======
+      "id": "49f9",
+>>>>>>> 7042ae1902e836452e91fb8ee2fa40fd90e4d4a4
       "email": "",
       "password": "",
       "name": ""
     },
     {
+<<<<<<< HEAD
       "id": "9b33",
       "email": "",
       "password": "",
@@ -26,4 +35,75 @@
     }
   ],
   "blogs": []
+=======
+      "id": "6a54",
+      "email": "",
+      "password": "",
+      "name": ""
+    },
+    {
+      "id": "8813",
+      "email": "kuteanamika@gmail.com",
+      "password": "123",
+      "name": "anamika kute"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "cf1f",
+      "title": "hi trusha",
+      "description": " i am trusha"
+    },
+    {
+      "id": "356f",
+      "title": "hi krush",
+      "description": "i am krushnai"
+    },
+    {
+      "id": "9630",
+      "title": "hi krush",
+      "description": "i am krushnai"
+    },
+    {
+      "id": "0816",
+      "title": "hi krush",
+      "description": "i am krushnai"
+    },
+    {
+      "id": "4bb5",
+      "title": "hi krush",
+      "description": "i am krushnai"
+    },
+    {
+      "id": "dfb7",
+      "title": "hi krush",
+      "description": "i am krushnai"
+    },
+    {
+      "id": "663c",
+      "title": "hi krush",
+      "description": "i am krushnai"
+    },
+    {
+      "id": "025c",
+      "title": "hi krush",
+      "description": "i am krushnai"
+    },
+    {
+      "id": "ec47",
+      "title": "hi krush",
+      "description": "i am krushnai"
+    },
+    {
+      "id": "7c65",
+      "title": "hi krush",
+      "description": "i am krushnai"
+    },
+    {
+      "id": "b6b6",
+      "title": "hello rutuja",
+      "description": "ihnmkn.jfoijk vbnmvbnm"
+    }
+  ]
+>>>>>>> 7042ae1902e836452e91fb8ee2fa40fd90e4d4a4
 }
