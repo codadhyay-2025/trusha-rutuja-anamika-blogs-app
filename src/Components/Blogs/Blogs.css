@@ -17,18 +17,31 @@
 }
 
 .headTitleOfNewPost {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
+    color: #ffffff;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    margin-bottom: 12px;
+}
+
+.subTitleSectionOfNewPost {
+    color: #ffffff;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    font-size: 18px;
+
 }
 
 .createNewPostBtn {
-    padding: 7px 20px;
-    color: navy;
-    background-color: navy;
+    padding: 10px 20px;
+    background-color:rgb(255, 153, 0);
+    /* background-color: rgb(193, 118, 223); */
+    /* background-color: rgb(152, 109, 192); */
     color: white;
     border-radius: 5px;
     border: none;
     font-weight: 600;
+    font-size: 15px;
+    /* box-shadow:  20px 20px 50px orange; */
 }
 
 .blogCard {
@@ -43,6 +56,8 @@
 .titleOfBlogsPage {
     font-size: 25px;
     font-weight: bold;
+    margin-bottom: 7px;
+
 }
 
 em {
@@ -63,18 +78,19 @@ em {
 .thumbsUpIcon {
     padding: 10px 15px;
     border-radius: 4px;
-    background-color: green;
+    background-color: rgb(22, 163, 81);
     color: white;
     border: none;
+    font-size: 14px;
 }
 
 .thumbsDownIcon {
     padding: 10px 14px;
     border-radius: 4px;
-    background-color: rgb(248, 248, 19);
+    background-color: rgb(230, 192, 28);
     border: none;
     color: white;
-
+    font-size: 14px;
 }
 
 .editBtn {
@@ -82,8 +98,9 @@ em {
     border: none;
     color: white;
     font-weight: 600;
-    background-color: rgb(2, 77, 2);
+    background-color: rgb(17, 129, 17);
     border-radius: 4px;
+    font-size: 14px;
 }
 
 .deleteBtn {
@@ -91,9 +108,9 @@ em {
     border: none;
     color: white;
     font-weight: 600;
-    background-color: red;
+    background-color: rgb(211, 35, 35);
     border-radius: 4px;
-
+    font-size: 14px;
 
 }
 
