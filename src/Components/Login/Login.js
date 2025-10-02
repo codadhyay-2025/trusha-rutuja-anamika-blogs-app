@@ -2,11 +2,10 @@ import "./Login.css"
 import { useNavigate } from "react-router-dom";
 
 function Login(){
-    const navigate = useNavigate();
-    const navigateToBlogs = () => {
+    const navigate =useNavigate();
+    const navigateToBlogs =()=>{
         navigate("/blogs")
     }
-
     
     return(
      <div className="backgroundColor">

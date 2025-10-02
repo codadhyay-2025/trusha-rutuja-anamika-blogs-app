@@ -27,7 +27,7 @@ function Blogs() {
             
         },
         {
-            id: 1,
+            id: 3,
             title: "Hello World",
             createdBy: "ishwari.kanase@gmail.com",
             createdAt: "1st Dec, 2021",
@@ -35,7 +35,7 @@ function Blogs() {
             
         },
         {
-            id: 2,
+            id: 4,
             title: "Hello India",
             createdBy: "ishwari.kanaseee@gmail.com",
             createdAt: "2st Dec, 2021"
