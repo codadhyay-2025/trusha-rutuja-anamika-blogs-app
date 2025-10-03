@@ -1,10 +1,11 @@
 import { useState ,useEffect } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import "./CreateNewPost.css"
 function CreateNewPost(){
     const navigate = useNavigate();
+    const{id}=useParams();
     // const navigateToCreateNewPost =()=>{
     //     navigate("/createnewpost")
     // }
@@ -25,7 +26,7 @@ function CreateNewPost(){
         .then((response)=>{
          console.log(blogsdata);
          console.log("Blog saved:",response.data)      
-        navigate("/createnewpost")
+        navigate("/blogs")
           
         })
         .catch((error) =>{
@@ -33,6 +34,7 @@ function CreateNewPost(){
         })
     }
     
+     
     return (
         <div className="mainSectionOfCreateNewPost">
             <div className="cardOfCreateNewPost">

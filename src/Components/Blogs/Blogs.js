@@ -1,47 +1,54 @@
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import "./Blogs.css"
-import { useNavigate} from "react-router-dom";
+import { useNavigate ,useParams} from "react-router-dom";
+import axios from "axios";
 
 function Blogs() {
     const navigate = useNavigate();
+    const {id}=useParams();
     const navigateToCreateNewPost = () => 
         navigate("/createnewpost");
+     const  [blogs,setBlogs ]=useState([])
         
-        // const [blogsdata, setBlogsData] = useState([]);
-    
-    
-     const blogs= [
-        {
-            id: 1,
-            title: "Hello World",
-            createdBy: "ishwari.kanase@gmail.com",
-            createdAt: "1st Dec, 2021",
-            description:"wsexdrcfvtgybhnujmk,ledrftvgybhnujmk,l"
-            
-        },
-        {
-            id: 2,
-            title: "Hello India",
-            createdBy: "ishwari.kanaseee@gmail.com",
-            createdAt: "2st Dec, 2021"
-            
-        },
-        {
-            id: 3,
-            title: "Hello World",
-            createdBy: "ishwari.kanase@gmail.com",
-            createdAt: "1st Dec, 2021",
-            description:"wsexdrcfvtgybhnujmk,ledrftvgybhnujmk,l"
-            
-        },
-        {
-            id: 4,
-            title: "Hello India",
-            createdBy: "ishwari.kanaseee@gmail.com",
-            createdAt: "2st Dec, 2021"
-            
-        }
-    ];
+    useEffect(() => {
+          getAllBlogs();
+  }, []);
+
+
+  function getAllBlogs(){
+     axios.get("http://localhost:3001/blogs")
+      .then((response) => {
+        setBlogs(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching blogs:", error);
+      });
+  }
+
+    const handleDelete = (id) => {
+//   console.log("Trying to delete blog id:", id);
+
+  axios.delete("http://localhost:3001/blogs/" + id)
+    .then((response )=> {
+      console.log(response);
+      getAllBlogs();
+
+
+    })
+    .catch((error) => console.error("Delete error:", error));
+};
+
+const handleEdit = (id, blogsdata) => {
+  axios.patch("http://localhost:3001/blogs/" + id , blogsdata)
+    .then((response) => {
+      console.log(response.data);
+      navigate("/createnewpost/" + id);
+    })
+    .catch((error) => {
+      console.log( error);
+    });
+};
+   
     return (
         <div className="mainSectionOfBlogsPage">
             <div className='headSectionOfNewPost'>
@@ -59,7 +66,6 @@ function Blogs() {
                 </div>
             </div>
 
-            {/* return( */}
             <div>
                 {blogs.map((singleblog) => (
                     <div key={singleblog.id} className="blogCard">
@@ -77,14 +83,13 @@ function Blogs() {
                             </div>
                             <div className="likeAndDislikeBtn">
                                 <div><button className="editBtn"><i class="fa fa-pencil writingIcon" aria-hidden="true"></i>Edit</button></div>
-                                <div><button className="deleteBtn"><i class="fa fa-trash-o writingIcon" aria-hidden="true"></i>Delete</button></div>
+                                <div><button className="deleteBtn" onClick={()=>handleDelete (singleblog.id)}><i class="fa fa-trash-o writingIcon" aria-hidden="true"></i>Delete</button></div>
 
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-            {/* ) */}
         </div>
     )
 }

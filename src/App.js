@@ -11,15 +11,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <div className='backgroundImage'>
       <Router>
         <Header />
         <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/blogs' element={<Blogs />} />
-          <Route path='/createnewpost' element={<CreateNewPost />} />
+          <Route path='/blogs/:id?' element={<Blogs />} />
+          <Route path='/createnewpost/:id?' element={<CreateNewPost />} />
         </Routes>
       </Router>
 

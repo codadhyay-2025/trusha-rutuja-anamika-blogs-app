@@ -1,6 +1,7 @@
 {
   "user": [
     {
+<<<<<<< HEAD
       "id": "4e41",
       "email": "dfiuie",
       "password": "567",
@@ -23,10 +24,29 @@
       "email": "",
       "password": "",
       "name": ""
+=======
+      "id": "c80d",
+      "email": "rutuja@gmail.com",
+      "password": "123",
+      "name": "Rutuja Date"
+    },
+    {
+      "id": "7a7f",
+      "email": "rutuja@123gmail.com",
+      "password": "123",
+      "name": "Rutuja"
+    },
+    {
+      "id": "b6fb",
+      "email": "spp",
+      "password": "spp",
+      "name": "spp"
+>>>>>>> 03afc112e28b8eaeb01444746d7e02d2a15636da
     }
   ],
   "blogs": [
     {
+<<<<<<< HEAD
       "id": "a793",
       "title": "The Importance of Curiosity in Everyday Life",
       "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities."
@@ -60,6 +80,11 @@
       "id": "5532",
       "title": "fgdrh",
       "description": "fefdhfg"
+=======
+      "id": "b474",
+      "title": "Rutuja",
+      "description": "Hello ,I am Rutuja Date"
+>>>>>>> 03afc112e28b8eaeb01444746d7e02d2a15636da
     }
   ]
 }
