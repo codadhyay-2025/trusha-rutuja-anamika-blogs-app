@@ -38,6 +38,16 @@ function Blogs() {
     .catch((error) => console.error("Delete error:", error));
 };
 
+const handleEdit = (id, blogsdata) => {
+  axios.patch("http://localhost:3001/blogs/" + id , blogsdata)
+    .then((response) => {
+      console.log(response.data);
+      navigate("/createnewpost/" + id);
+    })
+    .catch((error) => {
+      console.log( error);
+    });
+};
    
     return (
         <div className="mainSectionOfBlogsPage">
