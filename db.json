@@ -1,7 +1,6 @@
 {
   "user": [
     {
-<<<<<<< HEAD
       "id": "4e41",
       "email": "dfiuie",
       "password": "567",
@@ -9,101 +8,58 @@
     },
     {
       "id": "cd64",
-=======
-      "id": "6912",
->>>>>>> 7042ae1902e836452e91fb8ee2fa40fd90e4d4a4
       "email": "",
       "password": "",
       "name": ""
     },
     {
-<<<<<<< HEAD
       "id": "41ae",
-=======
-      "id": "49f9",
->>>>>>> 7042ae1902e836452e91fb8ee2fa40fd90e4d4a4
       "email": "",
       "password": "",
       "name": ""
     },
     {
-<<<<<<< HEAD
       "id": "9b33",
       "email": "",
       "password": "",
       "name": ""
     }
   ],
-  "blogs": []
-=======
-      "id": "6a54",
-      "email": "",
-      "password": "",
-      "name": ""
-    },
-    {
-      "id": "8813",
-      "email": "kuteanamika@gmail.com",
-      "password": "123",
-      "name": "anamika kute"
-    }
-  ],
   "blogs": [
     {
-      "id": "cf1f",
-      "title": "hi trusha",
-      "description": " i am trusha"
+      "id": "a793",
+      "title": "The Importance of Curiosity in Everyday Life",
+      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities."
     },
     {
-      "id": "356f",
-      "title": "hi krush",
-      "description": "i am krushnai"
+      "id": "4897",
+      "title": "The Importance of Curiosity in Everyday Life",
+      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities."
     },
     {
-      "id": "9630",
-      "title": "hi krush",
-      "description": "i am krushnai"
+      "id": "46a9",
+      "title": "The Importance of Curiosity in Everyday Life",
+      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities."
     },
     {
-      "id": "0816",
-      "title": "hi krush",
-      "description": "i am krushnai"
+      "id": "b671",
+      "title": "The Importance of Curiosity in Everyday Life",
+      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities."
     },
     {
-      "id": "4bb5",
-      "title": "hi krush",
-      "description": "i am krushnai"
+      "id": "4ab8",
+      "title": "fgdrh",
+      "description": "fefdhfg"
     },
     {
-      "id": "dfb7",
-      "title": "hi krush",
-      "description": "i am krushnai"
+      "id": "3963",
+      "title": "fgdrh",
+      "description": "fefdhfg"
     },
     {
-      "id": "663c",
-      "title": "hi krush",
-      "description": "i am krushnai"
-    },
-    {
-      "id": "025c",
-      "title": "hi krush",
-      "description": "i am krushnai"
-    },
-    {
-      "id": "ec47",
-      "title": "hi krush",
-      "description": "i am krushnai"
-    },
-    {
-      "id": "7c65",
-      "title": "hi krush",
-      "description": "i am krushnai"
-    },
-    {
-      "id": "b6b6",
-      "title": "hello rutuja",
-      "description": "ihnmkn.jfoijk vbnmvbnm"
+      "id": "5532",
+      "title": "fgdrh",
+      "description": "fefdhfg"
     }
   ]
->>>>>>> 7042ae1902e836452e91fb8ee2fa40fd90e4d4a4
 }
