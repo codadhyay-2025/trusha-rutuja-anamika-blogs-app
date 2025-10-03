@@ -1,13 +1,11 @@
 {
   "user": [
-    
     {
       "id": "c80d",
       "email": "rutuja@gmail.com",
       "password": "123",
       "name": "Rutuja Date"
     },
-   
     {
       "id": "7a7f",
       "email": "rutuja@123gmail.com",
@@ -23,14 +21,9 @@
   ],
   "blogs": [
     {
-      "id": "5",
-      "title": "him,",
-      "description": "dghfjklascvbmnxzcvvvvv"
-    },
-    {
-      "id": "6",
-      "title": "hi ana",
-      "description": "vbnm,.ccx"
+      "id": "b474",
+      "title": "Rutuja",
+      "description": "Hello ,I am Rutuja Date"
     }
   ]
 }

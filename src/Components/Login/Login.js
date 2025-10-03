@@ -80,7 +80,8 @@ function Login() {
 
 
     return (
-        <div className="backgroundColor">
+        
+        // <div className="backgroundColor">
             <div className="loginBox">
                 <div className="loginBlog">Blogs</div>
                 <div className="loginContent">Publish your passions,your way....</div>
@@ -106,7 +107,8 @@ function Login() {
                     <button className="loginButton" onClick={handleLoginData}>Login</button>
                 </div>
             </div>
-        </div>
+        // </div>
+    
 
     );
 }
