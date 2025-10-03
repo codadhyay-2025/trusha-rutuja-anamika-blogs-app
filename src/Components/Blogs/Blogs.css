@@ -1,91 +1,119 @@
-.mainSectionOfBlogsPage{
+.mainSectionOfBlogsPage {
     height: 100vh;
     margin: 0px;
 }
-.headSectionOfNewPost{
-    
+
+.headSectionOfNewPost {
+
     width: 61%;
     margin: auto;
 }
-.btnAndTitleSection{
+
+.btnAndTitleSection {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.headTitleOfNewPost{
-    font-size: 35px;
+
+.headTitleOfNewPost {
+    font-size: 40px;
     font-weight: bold;
+    color: #ffffff;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    margin-bottom: 12px;
 }
-.createNewPostBtn{
-    padding: 7px 20px;
-    color: navy;
-    background-color: navy;
-    color:white;
+
+.subTitleSectionOfNewPost {
+    color: #ffffff;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    font-size: 18px;
+
+}
+
+.createNewPostBtn {
+    padding: 10px 20px;
+    background-color:rgb(255, 153, 0);
+    /* background-color: rgb(193, 118, 223); */
+    /* background-color: rgb(152, 109, 192); */
+    color: white;
     border-radius: 5px;
     border: none;
     font-weight: 600;
+    font-size: 15px;
+    /* box-shadow:  20px 20px 50px orange; */
 }
 
-.blogCard{
-     width: 61%;
+.blogCard {
+    width: 61%;
     margin: auto;
-    height: 25vh;
     background-color: #ffffff;
     border-radius: 4px;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
-.titleOfBlogsPage{
-    font-size: 40px;
+
+.titleOfBlogsPage {
+    font-size: 25px;
     font-weight: bold;
+    margin-bottom: 7px;
+
 }
-em{
-    color:rgb(74, 74, 74)
+
+em {
+    color: rgb(74, 74, 74)
 }
-.likeAndDislikeBtn{
+
+.likeAndDislikeBtn {
     display: flex;
-    gap:10px;
+    gap: 10px;
 }
-.btnSectionOfBlog{
+
+.btnSectionOfBlog {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-.thumbsUpIcon{
-padding: 10px 15px;
-border-radius: 4px;
-background-color: green;
-color: white;
-border: none;
-}
-.thumbsDownIcon{
-padding: 10px 14px;
-border-radius: 4px;
-background-color: rgb(248, 248, 19);
-border: none;
-color: white;
 
+.thumbsUpIcon {
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: rgb(22, 163, 81);
+    color: white;
+    border: none;
+    font-size: 14px;
 }
-.editBtn{
+
+.thumbsDownIcon {
+    padding: 10px 14px;
+    border-radius: 4px;
+    background-color: rgb(230, 192, 28);
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+.editBtn {
     padding: 9px 17px;
     border: none;
-color: white;
-font-weight: 600;
-background-color: rgb(2, 77, 2);
-border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(17, 129, 17);
+    border-radius: 4px;
+    font-size: 14px;
 }
-.deleteBtn{
-padding: 9px 17px;
+
+.deleteBtn {
+    padding: 9px 17px;
     border: none;
-color: white;
-font-weight: 600;
-background-color: red;
-border-radius: 4px;
-
+    color: white;
+    font-weight: 600;
+    background-color: rgb(211, 35, 35);
+    border-radius: 4px;
+    font-size: 14px;
 
 }
-.writingIcon{
+
+.writingIcon {
     margin-right: 5px;
 }
-

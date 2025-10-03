@@ -1,15 +1,15 @@
 .mainSectionOfCreateNewPost{
-    height: 100vh;
+    height: 100%;
     margin: 0px;
 }
 .cardOfCreateNewPost{
     margin-top: 10px;
     width: 61%;
     margin: auto;
-    height: 45vh;
+    /* height: 45vh; */
     background-color: #ffffff;
     border-radius: 4px;
-    padding: 15px;
+    padding: 20px;
 
 }
 .titleOfCreateNewPost{
@@ -30,9 +30,10 @@
 .btnOfCreateNewPost{
     padding: 8px 15px;
     border-radius: 4px;
-    background-color: navy;
+    background-color: rgb(4, 87, 112);
     color: white;
     font-weight: bold;
+    border: none;
 
 }
 .btnSection{
