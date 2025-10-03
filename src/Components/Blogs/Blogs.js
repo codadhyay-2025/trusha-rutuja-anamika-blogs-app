@@ -27,15 +27,14 @@ function Blogs() {
             
         },
         {
-            id: 1,
+            id: 3,
             title: "Hello World",
             createdBy: "ishwari.kanase@gmail.com",
             createdAt: "1st Dec, 2021",
             description:"wsexdrcfvtgybhnujmk,ledrftvgybhnujmk,l"
-            
         },
         {
-            id: 2,
+            id: 4,
             title: "Hello India",
             createdBy: "ishwari.kanaseee@gmail.com",
             createdAt: "2st Dec, 2021"
@@ -59,7 +58,6 @@ function Blogs() {
                 </div>
             </div>
 
-            return(
             <div>
                 {blogs.map((singleblog) => (
                     <div key={singleblog.id} className="blogCard">
@@ -84,7 +82,6 @@ function Blogs() {
                     </div>
                 ))}
             </div>
-            )
         </div>
     )
 }
