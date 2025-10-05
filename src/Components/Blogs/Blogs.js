@@ -11,22 +11,29 @@ function Blogs() {
      const  [blogs,setBlogs ]=useState([])
         
     useEffect(() => {
-    axios.get("http://localhost:3001/blogs")
+          getAllBlogs();
+  }, []);
+
+
+  function getAllBlogs(){
+     axios.get("http://localhost:3001/blogs")
       .then((response) => {
         setBlogs(response.data);
       })
       .catch((error) => {
         console.error("Error fetching blogs:", error);
       });
-  }, []);
+  }
 
     const handleDelete = (id) => {
 //   console.log("Trying to delete blog id:", id);
 
   axios.delete("http://localhost:3001/blogs/" + id)
-    .then(() => {
-      setBlogs((prevBlogs) => prevBlogs.filter((b) => b.id !== id));
-      console.log("Deleted blog:", id);
+    .then((response )=> {
+      console.log(response);
+      getAllBlogs();
+
+
     })
     .catch((error) => console.error("Delete error:", error));
 };
@@ -75,7 +82,7 @@ const handleEdit = (id, blogsdata) => {
                                 <div><button className="thumbsDownIcon"><i class="fa fa-thumbs-down " aria-hidden="true"></i></button></div>
                             </div>
                             <div className="likeAndDislikeBtn">
-                                <div><button className="editBtn" onClick={()=>handleEdit(singleblog.id)}><i class="fa fa-pencil writingIcon" aria-hidden="true"></i>Edit</button></div>
+                                <div><button className="editBtn"><i class="fa fa-pencil writingIcon" aria-hidden="true"></i>Edit</button></div>
                                 <div><button className="deleteBtn" onClick={()=>handleDelete (singleblog.id)}><i class="fa fa-trash-o writingIcon" aria-hidden="true"></i>Delete</button></div>
 
                             </div>
