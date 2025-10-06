@@ -1,7 +1,7 @@
- .backgroundImage {
+ /* .backgroundImage {
       background-image: url('https://img.freepik.com/free-vector/hand-drawn-pattern-design-back-school-season_23-2150542623.jpg?semt=ais_incoming&w=740&q=80');
-      background-size: cover;
-      background-position: center;
+   /* background-size: cover; */
+      /* background-position: center;
       opacity: 0.3;
       position: absolute;
       top: 0;
@@ -9,7 +9,7 @@
       right: 0;
       bottom: 0;
       z-index: 1;
-    }
+    
 
     .loginBox{
       position: relative;
@@ -21,4 +21,4 @@
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       text-align: center;
-    }
+    } */ 

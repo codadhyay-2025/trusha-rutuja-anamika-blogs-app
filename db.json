@@ -1,30 +1,6 @@
 {
   "user": [
     {
-<<<<<<< HEAD
-      "id": "4e41",
-      "email": "dfiuie",
-      "password": "567",
-      "name": "fguygtuyfg"
-    },
-    {
-      "id": "cd64",
-      "email": "",
-      "password": "",
-      "name": ""
-    },
-    {
-      "id": "41ae",
-      "email": "",
-      "password": "",
-      "name": ""
-    },
-    {
-      "id": "9b33",
-      "email": "",
-      "password": "",
-      "name": ""
-=======
       "id": "c80d",
       "email": "rutuja@gmail.com",
       "password": "123",
@@ -41,50 +17,13 @@
       "email": "spp",
       "password": "spp",
       "name": "spp"
->>>>>>> 03afc112e28b8eaeb01444746d7e02d2a15636da
+    },
+    {
+      "id": "4c76",
+      "email": "dfghjk",
+      "password": "erty",
+      "name": "ertyui"
     }
   ],
-  "blogs": [
-    {
-<<<<<<< HEAD
-      "id": "a793",
-      "title": "The Importance of Curiosity in Everyday Life",
-      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities."
-    },
-    {
-      "id": "4897",
-      "title": "The Importance of Curiosity in Everyday Life",
-      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities."
-    },
-    {
-      "id": "46a9",
-      "title": "The Importance of Curiosity in Everyday Life",
-      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities."
-    },
-    {
-      "id": "b671",
-      "title": "The Importance of Curiosity in Everyday Life",
-      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities."
-    },
-    {
-      "id": "4ab8",
-      "title": "fgdrh",
-      "description": "fefdhfg"
-    },
-    {
-      "id": "3963",
-      "title": "fgdrh",
-      "description": "fefdhfg"
-    },
-    {
-      "id": "5532",
-      "title": "fgdrh",
-      "description": "fefdhfg"
-=======
-      "id": "b474",
-      "title": "Rutuja",
-      "description": "Hello ,I am Rutuja Date"
->>>>>>> 03afc112e28b8eaeb01444746d7e02d2a15636da
-    }
-  ]
+  "blogs": []
 }
