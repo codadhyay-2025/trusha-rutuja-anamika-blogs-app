@@ -20,7 +20,6 @@ function Header() {
                     <div className="headerRightLinkSection" onClick={navigateToLogin}>Login</div>
                     <div className="headerRightLinkSection" onClick={navigateToRegister}>Register</div>
                 </div>
-
             </div>
 
         </div>
