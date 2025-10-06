@@ -38,16 +38,10 @@ function Blogs() {
     .catch((error) => console.error("Delete error:", error));
 };
 
-const handleEdit = (id, blogsdata) => {
-  axios.patch("http://localhost:3001/blogs/" + id , blogsdata)
-    .then((response) => {
-      console.log(response.data);
-      navigate("/createnewpost/" + id);
-    })
-    .catch((error) => {
-      console.log( error);
-    });
-};
+// const handleEdit = () => {
+//   navigate("/createnewpost/" + id);
+
+// };
    
     return (
         <div className="mainSectionOfBlogsPage">
@@ -82,7 +76,7 @@ const handleEdit = (id, blogsdata) => {
                                 <div><button className="thumbsDownIcon"><i class="fa fa-thumbs-down " aria-hidden="true"></i></button></div>
                             </div>
                             <div className="likeAndDislikeBtn">
-                                <div><button className="editBtn"><i class="fa fa-pencil writingIcon" aria-hidden="true"></i>Edit</button></div>
+                                <div><button className="editBtn" ><i class="fa fa-pencil writingIcon" aria-hidden="true"></i>Edit</button></div>
                                 <div><button className="deleteBtn" onClick={()=>handleDelete (singleblog.id)}><i class="fa fa-trash-o writingIcon" aria-hidden="true"></i>Delete</button></div>
 
                             </div>

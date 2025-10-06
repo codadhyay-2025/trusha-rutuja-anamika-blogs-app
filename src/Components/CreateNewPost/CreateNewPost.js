@@ -33,8 +33,9 @@ function CreateNewPost(){
             console.log("Error:",error)
         })
     }
-    
-     
+ 
+
+
     return (
         <div className="mainSectionOfCreateNewPost">
             <div className="cardOfCreateNewPost">
