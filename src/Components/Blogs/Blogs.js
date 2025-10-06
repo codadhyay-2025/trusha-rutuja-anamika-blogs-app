@@ -26,27 +26,19 @@ function Blogs() {
   }
 
     const handleDelete = (id) => {
-//   console.log("Trying to delete blog id:", id);
-
   axios.delete("http://localhost:3001/blogs/" + id)
     .then((response )=> {
       console.log(response);
       getAllBlogs();
-
-
     })
     .catch((error) => console.error("Delete error:", error));
 };
 
-const handleEdit = (id, blogsdata) => {
-  axios.patch("http://localhost:3001/blogs/" + id , blogsdata)
-    .then((response) => {
-      console.log(response.data);
+const handleEdit = (id) => {
+//   axios.put("http://localhost:3001/blogs/" + id , blogsdata)
+//     .then((response) => {
+//       console.log(response.data);
       navigate("/createnewpost/" + id);
-    })
-    .catch((error) => {
-      console.log( error);
-    });
 };
    
     return (
@@ -82,7 +74,7 @@ const handleEdit = (id, blogsdata) => {
                                 <div><button className="thumbsDownIcon"><i class="fa fa-thumbs-down " aria-hidden="true"></i></button></div>
                             </div>
                             <div className="likeAndDislikeBtn">
-                                <div><button className="editBtn"><i class="fa fa-pencil writingIcon" aria-hidden="true"></i>Edit</button></div>
+                                <div><button className="editBtn" onClick={()=>handleEdit(singleblog.id)}><i class="fa fa-pencil writingIcon" aria-hidden="true"></i>Edit</button></div>
                                 <div><button className="deleteBtn" onClick={()=>handleDelete (singleblog.id)}><i class="fa fa-trash-o writingIcon" aria-hidden="true"></i>Delete</button></div>
 
                             </div>
