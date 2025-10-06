@@ -1,58 +1,69 @@
-import { useState ,useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 
 import "./CreateNewPost.css"
-function CreateNewPost(){
+function CreateNewPost() {
     const navigate = useNavigate();
-    const{id}=useParams();
+    const { id } = useParams();
     // const navigateToCreateNewPost =()=>{
     //     navigate("/createnewpost")
     // }
-    const [blogsdata,setBlogsData]=useState({title :"",description:""});
-    function handleTitle (event) {
-        let blog ={...blogsdata};
-        blog["title"]=event.target.value
-        setBlogsData (blog)
+    const [blogsdata, setBlogsData] = useState({ title: "", description: "" });
+    function handleTitle(event) {
+        let blog = { ...blogsdata };
+        blog["title"] = event.target.value
+        setBlogsData(blog)
     }
-    function handleDescription (event){
-            let blog ={...blogsdata};
-            blog["description"]=event.target.value
-            setBlogsData(blog)
+    function handleDescription(event) {
+        let blog = { ...blogsdata };
+        blog["description"] = event.target.value
+        setBlogsData(blog)
     }
 
-    const handleSave=()=>{
-        axios.post("http://localhost:3001/blogs" ,blogsdata)
-        .then((response)=>{
-         console.log(blogsdata);
-         console.log("Blog saved:",response.data)      
-        navigate("/blogs")
-          
-        })
-        .catch((error) =>{
-            console.log("Error:",error)
-        })
-    }
- 
+    const handleToSave = () => {
+        axios.post("http://localhost:3001/blogs", blogsdata)
+            .then((response) => {
+                console.log(blogsdata);
+                console.log("Blog saved:", response.data)
+                navigate("/blogs")
 
+            })
+        axios.put("http://localhost:3001/blogs/" + id, blogsdata)
+            .then((response) => {
+                console.log(response.data);
+            })
+            .catch((error) => {
+                console.log("Error:", error)
+            })
+    }
+           useEffect(() => {
+                  axios.get("http://localhost:3001/blogs/" + id, blogsdata)
+                    .then((response)=>{
+                     setBlogsData(response.data);
+                    })
+                  
+
+
+  }, []);
 
     return (
         <div className="mainSectionOfCreateNewPost">
             <div className="cardOfCreateNewPost">
-                    <div>
-                        <input type="text" placeholder="Title" className="titleOfCreateNewPost"  value={blogsdata.title} onChange={handleTitle} />
-                    </div>
-                    <div>
-                        <textarea type="text"  
-                        placeholder="Description" 
+                <div>
+                    <input type="text" placeholder="Title" className="titleOfCreateNewPost" value={blogsdata.title} onChange={handleTitle} />
+                </div>
+                <div>
+                    <textarea type="text"
+                        placeholder="Description"
                         rows={20}
-                            className="textareaField" value={blogsdata.description} onChange={handleDescription}></textarea>
-                    </div>
-                    <div className="btnSection">
-                        <div><button className="btnOfCreateNewPost" >Cancel</button></div>
-                        <div><button className="btnOfCreateNewPost" onClick={handleSave}>Save</button></div>
+                        className="textareaField" value={blogsdata.description} onChange={handleDescription}></textarea>
+                </div>
+                <div className="btnSection">
+                    <div><button className="btnOfCreateNewPost" >Cancel</button></div>
+                    <div><button className="btnOfCreateNewPost" onClick={handleToSave}>Save</button></div>
 
-                    </div>
+                </div>
             </div>
         </div>
     )
