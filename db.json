@@ -1,5 +1,5 @@
 {
-  "user": [
+  "users": [
     {
       "id": "c80d",
       "email": "rutuja@gmail.com",
@@ -11,42 +11,6 @@
       "email": "rutuja@123gmail.com",
       "password": "123",
       "name": "Rutuja"
-    },
-    {
-      "id": "b6fb",
-      "email": "spp",
-      "password": "spp",
-      "name": "spp"
-    },
-    {
-      "id": "67d7",
-      "email": "",
-      "password": "",
-      "name": ""
-    },
-    {
-      "id": "e213",
-      "email": "",
-      "password": "",
-      "name": ""
-    },
-    {
-      "id": "ea65",
-      "email": "",
-      "password": "",
-      "name": ""
-    },
-    {
-      "id": "629a",
-      "email": "kuteanamiak@gmail.com",
-      "password": "123",
-      "name": "anamika kute"
-    },
-    {
-      "id": "4a8c",
-      "email": "",
-      "password": "",
-      "name": "hi"
     },
     {
       "id": "bb3b",
@@ -86,9 +50,11 @@
       "description": "Curiosity is one of the most powerful and underrated forces that drives human progress. From the moment we are born, our desire to explore, understand, and question the world around us fuels learning, innovation, and personal growth. Whether it’s a child asking endless “why” questions or a scientist seeking the secrets of the universe, curiosity is often the first step in any journey of discovery.\n\nHistorically, curiosity has been the spark behind many of humanity’s greatest achievements. The invention of the printing press, the discovery of electricity, and space exploration all began with someone wondering how things worked or imagining what could be possible. Without curiosity, progress would stall, and society would remain stagnant. It challenges the status quo and encourages people to think beyond what is immediately visible."
     },
     {
-      "id": "e084",
+      "id": "8997",
       "title": "पर्यावरणाचे रक्षण – आपली जबाबदारी",
-      "description": "आजच्या युगात विज्ञान व तंत्रज्ञानाच्या प्रगतीमुळे माणसाने जीवन अधिक सोयीचे आणि आरामदायक केले आहे. परंतु याच प्रगतीच्या मागे धावताना आपण निसर्गाचा समतोल बिघडवून टाकला आहे. झपाट्याने होणारी औद्योगिकीकरण, जंगलतोड, वाढते प्रदूषण आणि पर्यावरणाकडे दुर्लक्ष यामुळे संपूर्ण पृथ्वी संकटात आली आहे. म्हणूनच पर्यावरणाचे रक्षण करणे ही केवळ गरज नाही, तर प्रत्येकाची जबाबदारी आहे.\n\nपर्यावरण म्हणजे आपल्याला वेढून असलेले संपूर्ण नैसर्गिक जग – झाडे, प्राणी, हवा, पाणी, माती इत्यादी. हे सर्व घटक एकमेकांशी संलग्न असून यातील थोडाही बदल आपल्या जीवनावर परिणाम करतो. उदाहरणार्थ, जंगलतोड केल्यामुळे पावसाचे प्रमाण कमी होते, जैवविविधता नष्ट होते आणि प्रदूषण वाढते. तसेच नद्या व समुद्रात टाकला जाणारा कचरा आणि रसायने पिण्याच्या पाण्यालाच घातक ठरतात."
+      "description": "आजच्या युगात विज्ञान व तंत्रज्ञानाच्या प्रगतीमुळे माणसाने जीवन अधिक सोयीचे आणि आरामदायक केले आहे. परंतु याच प्रगतीच्या मागे धावताना आपण निसर्गाचा समतोल बिघडवून टाकला आहे. झपाट्याने होणारी औद्योगिकीकरण, जंगलतोड, वाढते प्रदूषण आणि पर्यावरणाकडे दुर्लक्ष यामुळे संपूर्ण पृथ्वी संकटात आली आहे. म्हणूनच पर्यावरणाचे रक्षण करणे ही केवळ गरज नाही, तर प्रत्येकाची जबाबदारी आहे.\n\nपर्यावरण म्हणजे आपल्याला वेढून असलेले संपूर्ण नैसर्गिक जग – झाडे, प्राणी, हवा, पाणी, माती इत्यादी. हे सर्व घटक एकमेकांशी संलग्न असून यातील थोडाही बदल आपल्या जीवनावर परिणाम करतो. उदाहरणार्थ, जंगलतोड केल्यामुळे पावसाचे प्रमाण कमी होते, जैवविविधता नष्ट होते आणि प्रदूषण वाढते. तसेच नद्या व समुद्रात टाकला जाणारा कचरा आणि रसायने पिण्याच्या पाण्यालाच घातक ठरतात.",
+      "CreatedBy": "trusha07@gmail.com",
+      "CreatedAt": "10/7/2025, 2:46:15 PM"
     }
   ]
 }

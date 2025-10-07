@@ -14,6 +14,7 @@ function Login() {
     )
     
     
+    
     function handlePasswordData(event) {
         let user = { ...loginData };
         user["password"] = event.target.value;
@@ -31,12 +32,13 @@ function Login() {
 
 
     function handleLoginData() {
-        if(loginData.email==="" ||loginData.password===""){
-                        console.log(loginData);
-                        alert("Please Enter Information");
-                    }
+        if (loginData.email === "" || loginData.password === "") {
+            console.log(loginData);
+            alert("Please Enter Information");
+        }
+        
         axios.get('http://localhost:3001/user').then((Response) => {
-            
+
             if (Response.status === 200) {
                 console.log("Response", Response);
                 const user = Response.data.find((userInfo) => {
@@ -46,30 +48,32 @@ function Login() {
                         // console.log("user", user)
                         // console.log(loginData)
                         // navigate("/blogs")
+                        localStorage.setItem("userEmail",loginData.email);
                         return userInfo;
+                        
                     }
                 })
-                console.log("user",user);
+                console.log("user", user);
 
                 if (user) {
                     localStorage.setItem("loginData", JSON.stringify(user))
-                    navigate("/blogs");  
+                    navigate("/blogs");
                     // console.log(user)
 
-                } 
-            else {
+                }
+                else {
                     alert("invalid User")
                     // console.log(user)
 
 
-                      }
-            
-                    }
+                }
+
+            }
 
 
         })
-        
-    
+
+
     };
 
 
@@ -80,35 +84,35 @@ function Login() {
 
 
     return (
-        
+
         // <div className="backgroundColor">
-            <div className="loginBox">
-                <div className="loginBlog">Blogs</div>
-                <div className="loginContent">Publish your passions,your way....</div>
-                <hr />
-                <div className="login">Login</div>
-                <div className="loginFeild">Email id</div>
-                <div>
-                    <input type="text"
-                        placeholder="test@gmail.com"
-                        value={loginData.email}
-                        onChange={handleEmailData}
-                        className="loginInputFeild" />
-                </div>
-                <div className="loginFeild">Password</div>
-                <div>
-                    <input type="Password"
-                        placeholder="Password"
-                        value={loginData.password}
-                        onChange={handlePasswordData}
-                        className="loginInputFeild" />
-                </div>
-                <div>
-                    <button className="loginButton" onClick={handleLoginData}>Login</button>
-                </div>
+        <div className="loginBox">
+            <div className="loginBlog">Blogs</div>
+            <div className="loginContent">Publish your passions,your way....</div>
+            <hr />
+            <div className="login">Login</div>
+            <div className="loginFeild">Email id</div>
+            <div>
+                <input type="text"
+                    placeholder="test@gmail.com"
+                    value={loginData.email}
+                    onChange={handleEmailData}
+                    className="loginInputFeild" />
             </div>
+            <div className="loginFeild">Password</div>
+            <div>
+                <input type="Password"
+                    placeholder="Password"
+                    value={loginData.password}
+                    onChange={handlePasswordData}
+                    className="loginInputFeild" />
+            </div>
+            <div>
+                <button className="loginButton" onClick={handleLoginData}>Login</button>
+            </div>
+        </div>
         // </div>
-    
+
 
     );
 }
