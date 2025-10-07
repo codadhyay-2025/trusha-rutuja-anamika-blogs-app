@@ -28,14 +28,13 @@ function Login() {
 
     }, []);
 
-
     function handleLoginData() {
         if (loginData.email === "" || loginData.password === "") {
             console.log(loginData);
             alert("Please Enter Information");
         }
-        
-        axios.get('http://localhost:3001/user').then((Response) => {
+
+        axios.get('http://localhost:3001/users').then((Response) => {
 
             if (Response.status === 200) {
                 console.log("Response", Response);
@@ -46,9 +45,9 @@ function Login() {
                         // console.log("user", user)
                         // console.log(loginData)
                         // navigate("/blogs")
-                        localStorage.setItem("userEmail",loginData.email);
+                        localStorage.setItem("userEmail", loginData.email);
                         return userInfo;
-                        
+
                     }
                 })
                 console.log("user", user);
