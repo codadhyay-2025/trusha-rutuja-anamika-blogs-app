@@ -28,7 +28,7 @@ function CreateNewPost() {
         
         if (id) {
             axios.put("http://localhost:3001/blogs/" + id, blogsdata)
-            // .then(() => navigate("/blogs"))
+            .then(() => navigate("/blogs"))
         }
         else {
             axios.post("http://localhost:3001/blogs/", blogsdata)
