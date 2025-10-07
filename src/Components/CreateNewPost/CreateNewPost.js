@@ -12,7 +12,7 @@ function CreateNewPost() {
     // const navigateToCreateNewPost =()=>{
     //     navigate("/createnewpost")
     // }
-    const [blogsdata, setBlogsData] = useState({ title: "", description: "" });
+    const [blogsdata, setBlogsData] = useState({ title: "", description: "" ,likes:[],dislikes:[]});
     function handleTitle(event) {
         let blog = { ...blogsdata };
         blog["title"] = event.target.value
