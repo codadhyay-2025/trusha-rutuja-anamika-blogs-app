@@ -26,7 +26,11 @@ function Register() {
         setUserData(user)
     }
     const handleRegistrationData = () => {
-        axios.post("http://localhost:3001/users", userdata)
+        if(userdata.email==="" ||userdata.password===""||userdata.name===""){
+                        console.log(userdata);
+                        alert("Please Enter Information");
+        }
+        else axios.post("http://localhost:3001/user", userdata)
             .then((response) => {
                 console.log(userdata);
 
