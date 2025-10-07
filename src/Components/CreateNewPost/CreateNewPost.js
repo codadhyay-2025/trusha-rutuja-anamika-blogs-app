@@ -21,31 +21,49 @@ function CreateNewPost() {
         setBlogsData(blog)
     }
 
-    const handleToSave = () => {
-        axios.post("http://localhost:3001/blogs", blogsdata)
-            .then((response) => {
-                console.log(blogsdata);
-                console.log("Blog saved:", response.data)
-                navigate("/blogs")
+    // const handleToSave = () => {
+    //     axios.post("http://localhost:3001/blogs", blogsdata)
+    //         .then((response) => {
+    //             console.log(blogsdata);
+    //             console.log("Blog saved:", response.data)
+    //             navigate("/blogs")
 
+    //         })
+    //     axios.put("http://localhost:3001/blogs/" + id, blogsdata)
+    //         .then((response) => {
+    //             console.log(response.data);
+    //         })
+    //         .catch((error) => {
+    //             console.log("Error:", error)
+    //         })
+    // }
+    const userEmail = localStorage.getItem('userEmail')
+    function handleToSave() {
+
+        console.log(blogsdata);
+        axios.post(`http://localhost:3001/blogs`, {
+            ...blogsdata,
+            CreatedBy: userEmail,
+            CreatedAt: new Date().toLocaleString()
+        })
+            .then(() => {
+                navigate("/blogs");
             })
-        axios.put("http://localhost:3001/blogs/" + id, blogsdata)
-            .then((response) => {
-                console.log(response.data);
-            })
-            .catch((error) => {
-                console.log("Error:", error)
-            })
+            .catch(error => console.error("Error creating blog:", error));
     }
-           useEffect(() => {
-                  axios.get("http://localhost:3001/blogs/" + id, blogsdata)
-                    .then((response)=>{
-                     setBlogsData(response.data);
-                    })
-                  
 
 
-  }, []);
+    useEffect(() => {
+
+        axios.get("http://localhost:3001/blogs/" + id, blogsdata)
+            .then(response => {
+                setBlogsData(response.data
+
+                )
+            })
+            .catch(error => console.error("Error fetching blog:", error));
+
+    }, [id]);
 
     return (
         <div className="mainSectionOfCreateNewPost">
