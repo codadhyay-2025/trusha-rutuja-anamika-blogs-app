@@ -17,6 +17,7 @@ function Header() {
             <div className="headerSection">
                 <div className="headerTitle" onClick={navigateToDashboard}>Blogs</div>
                 <div className="headerRightSection">
+                    
                     <div className="headerRightLinkSection" onClick={navigateToLogin}>Login</div>
                     <div className="headerRightLinkSection" onClick={navigateToRegister}>Register</div>
                 </div>

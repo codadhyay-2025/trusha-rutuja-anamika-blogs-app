@@ -9,10 +9,12 @@ function Blogs() {
     const navigateToCreateNewPost = () => 
         navigate("/createnewpost");
      const  [blogs,setBlogs ]=useState([])
-        
+    
     useEffect(() => {
           getAllBlogs();
   }, []);
+ 
+
 
 
   function getAllBlogs(){
@@ -40,7 +42,8 @@ const handleEdit = (id) => {
 //       console.log(response.data);
       navigate("/createnewpost/" + id);
 };
-   
+
+
     return (
         <div className="mainSectionOfBlogsPage">
             <div className='headSectionOfNewPost'>

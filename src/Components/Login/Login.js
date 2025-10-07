@@ -12,12 +12,13 @@ function Login() {
             password: ""
         }
     )
+    
+    
     function handlePasswordData(event) {
         let user = { ...loginData };
         user["password"] = event.target.value;
         setLoginData(user);
     }
-
 
     function handleEmailData(event) {
         let user = { ...loginData };
@@ -64,13 +65,12 @@ function Login() {
                       }
             
                     }
-                
-        
+
+
         })
         
     
     };
-
 
 
 

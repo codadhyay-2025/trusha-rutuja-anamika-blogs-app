@@ -47,11 +47,36 @@
       "email": "",
       "password": "",
       "name": "hi"
-    },{
+    },
+    {
       "id": "bb3b",
       "email": "trusha07@gmail.com",
       "password": "071215",
       "name": "Trusha Nimse"
+    },
+    {
+      "id": "7fa4",
+      "email": "xyz",
+      "password": "123",
+      "name": "abc"
+    },
+    {
+      "id": "3e77",
+      "email": "xyz",
+      "password": "123",
+      "name": "abc"
+    },
+    {
+      "id": "11da",
+      "email": "xyz",
+      "password": "123",
+      "name": "abc"
+    },
+    {
+      "id": "9ec6",
+      "email": "xyz",
+      "password": "123",
+      "name": "abc"
     }
   ],
   "blogs": [
@@ -67,4 +92,3 @@
     }
   ]
 }
-     
