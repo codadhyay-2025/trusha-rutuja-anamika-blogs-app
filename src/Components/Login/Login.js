@@ -12,12 +12,14 @@ function Login() {
             password: ""
         }
     )
+    
+    
+    
     function handlePasswordData(event) {
         let user = { ...loginData };
         user["password"] = event.target.value;
         setLoginData(user);
     }
-
 
     function handleEmailData(event) {
         let user = { ...loginData };
@@ -33,7 +35,7 @@ function Login() {
             console.log(loginData);
             alert("Please Enter Information");
         }
-
+        
         axios.get('http://localhost:3001/users').then((Response) => {
 
             if (Response.status === 200) {
@@ -72,7 +74,6 @@ function Login() {
 
 
     };
-
 
 
 

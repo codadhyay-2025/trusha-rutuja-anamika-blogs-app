@@ -33,9 +33,19 @@
   ],
   "blogs": [
     {
-      "id": "bb73",
-      "title": "The Power of Curiosity",
-      "description": "Curiosity is one of the most powerful and underrated forces that drives human progress. From the moment we are born, our desire to explore, understand, and question the world around us fuels learning, innovation, and personal growth. Whether it’s a child asking endless “why” questions or a scientist seeking the secrets of the universe, curiosity is often the first step in any journey of discovery.\n\nHistorically, curiosity has been the spark behind many of humanity’s greatest achievements. The invention of the printing press, the discovery of electricity, and space exploration all began with someone wondering how things worked or imagining what could be possible. Without curiosity, progress would stall, and society would remain stagnant. It challenges the status quo and encourages people to think beyond what is immediately visible."
+      "id": "a56b",
+      "title": "Trusha",
+      "description": "hi Trushaaaaaaa Rutuja",
+      "likes": [
+        "rutuja@gmail.com",
+        "sp"
+      ],
+      "dislikes": [
+        "rutuja@gmail.com",
+        "sp"
+      ],
+      "CreatedBy": "sp",
+      "CreatedAt": "10/7/2025, 4:34:59 PM"
     },
     {
       "id": "8997",
