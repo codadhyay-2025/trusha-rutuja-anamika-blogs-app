@@ -30,7 +30,7 @@ function Register() {
                         console.log(userdata);
                         alert("Please Enter Information");
         }
-        else axios.post("http://localhost:3001/user", userdata)
+        else axios.post("http://localhost:3001/users", userdata)
             .then((response) => {
                 console.log(userdata);
 
