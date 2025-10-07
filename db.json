@@ -51,24 +51,9 @@
   ],
   "blogs": [
     {
-      "id": "e7e5",
-      "title": "Rutuja",
-      "description": "Hello ,I am Rutuja Date.",
-      "likes": [
-        "rutuja@gmail.com",
-        "sp"
-      ],
-      "dislikes": [
-        "rutuja@gmail.com",
-        "sp"
-      ],
-      "CreatedBy": "rutuja@gmail.com",
-      "CreatedAt": "10/7/2025, 4:00:55 PM"
-    },
-    {
       "id": "a56b",
       "title": "Trusha",
-      "description": "hi Trushaaaaaaa",
+      "description": "hi Trushaaaaaaa Rutuja",
       "likes": [
         "rutuja@gmail.com",
         "sp"
@@ -77,8 +62,15 @@
         "rutuja@gmail.com",
         "sp"
       ],
-      "CreatedBy": "rutuja@gmail.com",
-      "CreatedAt": "10/7/2025, 4:13:20 PM"
+      "CreatedBy": "sp",
+      "CreatedAt": "10/7/2025, 4:34:59 PM"
+    },
+    {
+      "id": "156e",
+      "title": "Rutuja",
+      "description": "hi",
+      "likes": [],
+      "dislikes": []
     }
   ]
 }
