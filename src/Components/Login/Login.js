@@ -30,6 +30,7 @@ function Login() {
 
 
     function handleLoginData() {
+<<<<<<< HEAD
         if (loginData.email === "" || loginData.password === "") {
             console.log(loginData);
             alert("Please Enter Information");
@@ -37,6 +38,14 @@ function Login() {
         
         axios.get('http://localhost:3001/user').then((Response) => {
 
+=======
+        if(loginData.email==="" ||loginData.password===""){
+                        console.log(loginData);
+                        alert("Please Enter Information");
+                    }
+        axios.get('http://localhost:3001/users').then((Response) => {
+            
+>>>>>>> b466aa00260177630916662e98a904f2a9ab68f7
             if (Response.status === 200) {
                 console.log("Response", Response);
                 const user = Response.data.find((userInfo) => {

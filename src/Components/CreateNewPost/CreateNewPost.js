@@ -5,6 +5,9 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./CreateNewPost.css"
 function CreateNewPost() {
     const navigate = useNavigate();
+     const navigateToBackPage = () => {
+        navigate(-1);
+    }
     const { id } = useParams();
     // const navigateToCreateNewPost =()=>{
     //     navigate("/createnewpost")
@@ -21,6 +24,7 @@ function CreateNewPost() {
         setBlogsData(blog)
     }
 
+<<<<<<< HEAD
     // const handleToSave = () => {
     //     axios.post("http://localhost:3001/blogs", blogsdata)
     //         .then((response) => {
@@ -64,21 +68,50 @@ function CreateNewPost() {
             .catch(error => console.error("Error fetching blog:", error));
 
     }, [id]);
+=======
+    const handleToSave = () => {
+        
+        if (id) {
+            axios.put("http://localhost:3001/blogs/" + id, blogsdata)
+            .then(() => navigate("/blogs"))
+        }
+        else {
+            axios.post("http://localhost:3001/blogs/", blogsdata)
+                .then(() => navigate("/blogs"))
+        }
+    }
+    useEffect(() => {
+        if(id){
+        axios.get("http://localhost:3001/blogs/" + id, blogsdata)
+            .then((response) => {
+                setBlogsData(response.data);
+            })
+        }
+    }, []);
+>>>>>>> b466aa00260177630916662e98a904f2a9ab68f7
 
     return (
         <div className="mainSectionOfCreateNewPost">
             <div className="cardOfCreateNewPost">
                 <div>
-                    <input type="text" placeholder="Title" className="titleOfCreateNewPost" value={blogsdata.title} onChange={handleTitle} />
+                    <input type="text"
+                        placeholder="Title"
+                        className="titleOfCreateNewPost"
+                        value={blogsdata.title}
+                        onChange={handleTitle} />
                 </div>
                 <div>
                     <textarea type="text"
                         placeholder="Description"
                         rows={20}
-                        className="textareaField" value={blogsdata.description} onChange={handleDescription}></textarea>
+                        className="textareaField"
+                        value={blogsdata.description}
+                        onChange={handleDescription}>
+
+                    </textarea>
                 </div>
                 <div className="btnSection">
-                    <div><button className="btnOfCreateNewPost" >Cancel</button></div>
+                    <div><button className="btnOfCreateNewPost"onClick={navigateToBackPage} >Cancel</button></div>
                     <div><button className="btnOfCreateNewPost" onClick={handleToSave}>Save</button></div>
 
                 </div>
@@ -87,4 +120,5 @@ function CreateNewPost() {
     )
 
 }
+
 export default CreateNewPost;

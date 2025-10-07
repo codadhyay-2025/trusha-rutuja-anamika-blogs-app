@@ -1,5 +1,5 @@
 {
-  "user": [
+  "users": [
     {
       "id": "c80d",
       "email": "rutuja@gmail.com",
@@ -13,6 +13,45 @@
       "name": "Rutuja"
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "b6fb",
+      "email": "spp",
+      "password": "spp",
+      "name": "spp"
+    },
+    {
+      "id": "67d7",
+      "email": "",
+      "password": "",
+      "name": ""
+    },
+    {
+      "id": "e213",
+      "email": "",
+      "password": "",
+      "name": ""
+    },
+    {
+      "id": "ea65",
+      "email": "",
+      "password": "",
+      "name": ""
+    },
+    {
+      "id": "629a",
+      "email": "kuteanamiak@gmail.com",
+      "password": "123",
+      "name": "anamika kute"
+    },
+    {
+      "id": "4a8c",
+      "email": "",
+      "password": "",
+      "name": "hi"
+    },
+    {
+>>>>>>> b466aa00260177630916662e98a904f2a9ab68f7
       "id": "bb3b",
       "email": "trusha07@gmail.com",
       "password": "071215",
