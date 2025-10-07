@@ -1,5 +1,5 @@
 {
-  "user": [
+  "users": [
     {
       "id": "c80d",
       "email": "rutuja@gmail.com",
@@ -25,5 +25,11 @@
       "name": "ertyui"
     }
   ],
-  "blogs": []
+  "blogs": [
+    {
+      "id": "0cfb",
+      "title": "Rutuja",
+      "description": "Hello ,I am Rutuja Date."
+    }
+  ]
 }

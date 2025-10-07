@@ -34,7 +34,7 @@ function Login() {
                         console.log(loginData);
                         alert("Please Enter Information");
                     }
-        axios.get('http://localhost:3001/user').then((Response) => {
+        axios.get('http://localhost:3001/users').then((Response) => {
             
             if (Response.status === 200) {
                 console.log("Response", Response);

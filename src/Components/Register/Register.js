@@ -26,7 +26,7 @@ function Register() {
         setUserData(user)
     }
     const handleRegistrationData = () => {
-        axios.post("http://localhost:3001/user", userdata)
+        axios.post("http://localhost:3001/users", userdata)
             .then((response) => {
                 console.log(userdata);
 
