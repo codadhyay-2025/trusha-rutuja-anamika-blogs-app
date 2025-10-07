@@ -5,7 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./CreateNewPost.css"
 function CreateNewPost() {
     const navigate = useNavigate();
-     const navigateToBackPage = () => {
+    const navigateToBackPage = () => {
         navigate(-1);
     }
     const { id } = useParams();
@@ -24,26 +24,8 @@ function CreateNewPost() {
         setBlogsData(blog)
     }
 
-<<<<<<< HEAD
-    // const handleToSave = () => {
-    //     axios.post("http://localhost:3001/blogs", blogsdata)
-    //         .then((response) => {
-    //             console.log(blogsdata);
-    //             console.log("Blog saved:", response.data)
-    //             navigate("/blogs")
-
-    //         })
-    //     axios.put("http://localhost:3001/blogs/" + id, blogsdata)
-    //         .then((response) => {
-    //             console.log(response.data);
-    //         })
-    //         .catch((error) => {
-    //             console.log("Error:", error)
-    //         })
-    // }
     const userEmail = localStorage.getItem('userEmail')
     function handleToSave() {
-
         console.log(blogsdata);
         axios.post(`http://localhost:3001/blogs`, {
             ...blogsdata,
@@ -68,27 +50,6 @@ function CreateNewPost() {
             .catch(error => console.error("Error fetching blog:", error));
 
     }, [id]);
-=======
-    const handleToSave = () => {
-        
-        if (id) {
-            axios.put("http://localhost:3001/blogs/" + id, blogsdata)
-            .then(() => navigate("/blogs"))
-        }
-        else {
-            axios.post("http://localhost:3001/blogs/", blogsdata)
-                .then(() => navigate("/blogs"))
-        }
-    }
-    useEffect(() => {
-        if(id){
-        axios.get("http://localhost:3001/blogs/" + id, blogsdata)
-            .then((response) => {
-                setBlogsData(response.data);
-            })
-        }
-    }, []);
->>>>>>> b466aa00260177630916662e98a904f2a9ab68f7
 
     return (
         <div className="mainSectionOfCreateNewPost">
@@ -111,7 +72,7 @@ function CreateNewPost() {
                     </textarea>
                 </div>
                 <div className="btnSection">
-                    <div><button className="btnOfCreateNewPost"onClick={navigateToBackPage} >Cancel</button></div>
+                    <div><button className="btnOfCreateNewPost" onClick={navigateToBackPage} >Cancel</button></div>
                     <div><button className="btnOfCreateNewPost" onClick={handleToSave}>Save</button></div>
 
                 </div>

@@ -6,17 +6,10 @@ import axios from "axios";
 function Blogs() {
     const navigate = useNavigate();
     const { id } = useParams();
-<<<<<<< HEAD
-    const navigateToCreateNewPost = () => {
-        navigate("/createnewpost");
-    }
-
-=======
     const navigateToCreateNewPost = () =>
     {
         navigate("/createnewpost");
     }
->>>>>>> b466aa00260177630916662e98a904f2a9ab68f7
     const [blogs, setBlogs] = useState([])
 
     useEffect(() => {
@@ -44,12 +37,9 @@ function Blogs() {
     };
 
     const handleEdit = (id) => {
-<<<<<<< HEAD
         //   axios.put("http://localhost:3001/blogs/" + id , blogsdata)
         //     .then((response) => {
         //       console.log(response.data);
-=======
->>>>>>> b466aa00260177630916662e98a904f2a9ab68f7
         navigate("/createnewpost/" + id);
     };
 
