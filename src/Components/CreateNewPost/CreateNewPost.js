@@ -12,7 +12,7 @@ function CreateNewPost() {
     // const navigateToCreateNewPost =()=>{
     //     navigate("/createnewpost")
     // }
-    const [blogsdata, setBlogsData] = useState({ title: "", description: "" });
+    const [blogsdata, setBlogsData] = useState({ title: "", description: "", likes: [], dislikes: [] });
     function handleTitle(event) {
         let blog = { ...blogsdata };
         blog["title"] = event.target.value
@@ -25,31 +25,40 @@ function CreateNewPost() {
     }
 
     const userEmail = localStorage.getItem('userEmail')
-    function handleToSave() {
-        console.log(blogsdata);
-        axios.post(`http://localhost:3001/blogs`, {
-            ...blogsdata,
-            CreatedBy: userEmail,
-            CreatedAt: new Date().toLocaleString()
-        })
-            .then(() => {
-                navigate("/blogs");
-            })
-            .catch(error => console.error("Error creating blog:", error));
+    const handleToSave = () => {
+
+        if (id) {
+            axios.put("http://localhost:3001/blogs/" + id,
+                {
+                    ...blogsdata,
+                    CreatedBy: userEmail,
+                    CreatedAt: new Date().toLocaleString()
+
+                })
+            .then(() => navigate("/blogs"))
+        }
+        else {
+            axios.post("http://localhost:3001/blogs/",
+                {... blogsdata,
+                    CreatedBy:userEmail,
+                    CreatedAt:new Date().toLocaleString()
+                })
+                .then(() => navigate("/blogs"))
+        }
     }
 
-
     useEffect(() => {
+        if (id) {
+            axios.get("http://localhost:3001/blogs/" + id, blogsdata)
+                .then(response => {
+                    setBlogsData(response.data
 
-        axios.get("http://localhost:3001/blogs/" + id, blogsdata)
-            .then(response => {
-                setBlogsData(response.data
+                    )
+                })
 
-                )
-            })
-            .catch(error => console.error("Error fetching blog:", error));
-
-    }, [id]);
+                .catch(error => console.error("Error fetching blog:", error));
+        }
+    }, []);
 
     return (
         <div className="mainSectionOfCreateNewPost">

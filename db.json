@@ -19,6 +19,7 @@
       "name": "Trusha Nimse"
     },
     {
+<<<<<<< HEAD
       "id": "8e02",
       "email": "samruddhikute123",
       "password": "234",
@@ -29,19 +30,117 @@
       "email": "samruddhikute123",
       "password": "234",
       "name": "samruddhi"
+=======
+      "id": "14ee",
+      "email": "anamika@gmail.com",
+      "password": "12334",
+      "name": "Anamika"
+    },
+    {
+<<<<<<< HEAD
+      "id": "3e77",
+      "email": "xyz",
+      "password": "123",
+      "name": "abc"
+>>>>>>> 64122be28b5b469d55869eb99224bc0068d77cdf
     },
     {
       "id": "234b",
       "email": "samruddhhi234",
       "password": "123",
+<<<<<<< HEAD
       "name": "samruddhi"
+=======
+      "name": "abc"
+    },
+    {
+      "id": "9ec6",
+      "email": "xyz",
+      "password": "123",
+      "name": "abc"
+    },
+    {
+      "id": "598e",
+      "email": "sp",
+      "password": "123",
+      "name": "shradul"
+    },
+    {
+      "id": "750b",
+      "email": "shravani@123",
+      "password": "123",
+      "name": "Shravani"
+    },
+    {
+      "id": "2632",
+      "email": "rutuja",
+      "password": "123",
+      "name": "rutuja"
+    },
+    {
+      "id": "f4fe",
+      "email": "trusha",
+      "password": "123",
+      "name": "trusha"
+=======
+      "id": "4fc4",
+      "email": "trushanimse07@gmail.com",
+      "password": "071215",
+      "name": "Trusha Nimse"
+>>>>>>> 427de00f8c73b9f8a315dd75df0f9f6e908081ae
+>>>>>>> 64122be28b5b469d55869eb99224bc0068d77cdf
     }
   ],
   "blogs": [
     {
+<<<<<<< HEAD
       "id": "bb73",
       "title": "The Power of Curiosity",
       "description": "Curiosity is one of the most powerful and underrated forces that drives human progress. From the moment we are born, our desire to explore, understand, and question the world around us fuels learning, innovation, and personal growth. Whether it’s a child asking endless “why” questions or a scientist seeking the secrets of the universe, curiosity is often the first step in any journey of discovery.\n\nHistorically, curiosity has been the spark behind many of humanity’s greatest achievements. The invention of the printing press, the discovery of electricity, and space exploration all began with someone wondering how things worked or imagining what could be possible. Without curiosity, progress would stall, and society would remain stagnant. It challenges the status quo and encourages people to think beyond what is immediately visible."
+=======
+      "id": "a56b",
+      "title": "Trusha",
+      "description": "hi Trushaaaaaaa Rutuja",
+      "likes": [
+        "rutuja@gmail.com",
+        "sp",
+        "shravani@123"
+      ],
+      "dislikes": [
+        "rutuja@gmail.com",
+        "sp",
+        "shravani@123"
+      ],
+      "CreatedBy": "sp",
+      "CreatedAt": "10/7/2025, 4:34:59 PM"
+    },
+    {
+      "id": "156e",
+      "title": "Rutuja",
+      "description": "hi rutuja",
+      "likes": [
+        "shravani@123"
+      ],
+      "dislikes": [],
+      "CreatedBy": "shravani@123",
+      "CreatedAt": "10/8/2025, 11:01:43 AM"
+    },
+    {
+      "id": "48ff",
+      "title": "rutuja",
+      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities.\nHi Iam Rutuja",
+      "likes": [],
+      "dislikes": []
+    },
+    {
+      "id": "2e38",
+      "title": "Rutuja Date",
+      "description": "Hello ,I am Rutuja Date.",
+      "likes": [],
+      "dislikes": [],
+      "CreatedBy": "rutuja@gmail.com",
+      "CreatedAt": "10/8/2025, 1:14:29 PM"
+>>>>>>> 64122be28b5b469d55869eb99224bc0068d77cdf
     }
   ]
 }
