@@ -19,12 +19,13 @@
       "name": "Trusha Nimse"
     },
     {
-      "id": "7fa4",
-      "email": "xyz",
-      "password": "123",
-      "name": "abc"
+      "id": "14ee",
+      "email": "anamika@gmail.com",
+      "password": "12334",
+      "name": "Anamika"
     },
     {
+<<<<<<< HEAD
       "id": "3e77",
       "email": "xyz",
       "password": "123",
@@ -65,6 +66,12 @@
       "email": "trusha",
       "password": "123",
       "name": "trusha"
+=======
+      "id": "4fc4",
+      "email": "trushanimse07@gmail.com",
+      "password": "071215",
+      "name": "Trusha Nimse"
+>>>>>>> 427de00f8c73b9f8a315dd75df0f9f6e908081ae
     }
   ],
   "blogs": [

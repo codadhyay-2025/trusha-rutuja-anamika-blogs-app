@@ -30,7 +30,6 @@ function Login() {
 
     }, []);
 
-
     function handleLoginData() {
         if (loginData.email === "" || loginData.password === "") {
             console.log(loginData);
@@ -48,9 +47,9 @@ function Login() {
                         // console.log("user", user)
                         // console.log(loginData)
                         // navigate("/blogs")
-                        localStorage.setItem("userEmail",loginData.email);
+                        localStorage.setItem("userEmail", loginData.email);
                         return userInfo;
-                        
+
                     }
                 })
                 console.log("user", user);

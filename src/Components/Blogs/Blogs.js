@@ -95,7 +95,7 @@ function Blogs() {
                 {blogs.map((singleblog) => (
                     <div key={singleblog.id} className="blogCard">
                         <div className="titleOfBlogsPage">{singleblog.title}</div>
-                        <div><strong>Created By</strong><em>{singleblog.CreatedBy}</em></div>
+                        <div><strong>Created By </strong><em>{singleblog.CreatedBy}</em></div>
                         <div><strong>Created At </strong><em>{singleblog.CreatedAt}</em></div>
                         <hr />
                         <div>
