@@ -47,6 +47,24 @@
       "email": "sp",
       "password": "123",
       "name": "shradul"
+    },
+    {
+      "id": "750b",
+      "email": "shravani@123",
+      "password": "123",
+      "name": "Shravani"
+    },
+    {
+      "id": "2632",
+      "email": "rutuja",
+      "password": "123",
+      "name": "rutuja"
+    },
+    {
+      "id": "f4fe",
+      "email": "trusha",
+      "password": "123",
+      "name": "trusha"
     }
   ],
   "blogs": [
@@ -56,11 +74,13 @@
       "description": "hi Trushaaaaaaa Rutuja",
       "likes": [
         "rutuja@gmail.com",
-        "sp"
+        "sp",
+        "shravani@123"
       ],
       "dislikes": [
         "rutuja@gmail.com",
-        "sp"
+        "sp",
+        "shravani@123"
       ],
       "CreatedBy": "sp",
       "CreatedAt": "10/7/2025, 4:34:59 PM"
@@ -68,9 +88,29 @@
     {
       "id": "156e",
       "title": "Rutuja",
-      "description": "hi",
+      "description": "hi rutuja",
+      "likes": [
+        "shravani@123"
+      ],
+      "dislikes": [],
+      "CreatedBy": "shravani@123",
+      "CreatedAt": "10/8/2025, 11:01:43 AM"
+    },
+    {
+      "id": "48ff",
+      "title": "rutuja",
+      "description": "Curiosity is one of the most underrated qualities that humans possess. It is the driving force behind discovery, learning, and innovation. From the moment a child asks their first “why,” curiosity begins shaping the way they understand the world. Without curiosity, knowledge would remain stagnant, and progress would cease to exist.\n\nIn everyday life, curiosity pushes people to explore beyond routine. It encourages individuals to read new books, try different cuisines, or learn unfamiliar skills. Even small acts of curiosity—such as asking questions in class, experimenting with a hobby, or exploring a new place—can open doors to unexpected opportunities.\nHi Iam Rutuja",
       "likes": [],
       "dislikes": []
+    },
+    {
+      "id": "2e38",
+      "title": "Rutuja Date",
+      "description": "Hello ,I am Rutuja Date.",
+      "likes": [],
+      "dislikes": [],
+      "CreatedBy": "rutuja@gmail.com",
+      "CreatedAt": "10/8/2025, 1:14:29 PM"
     }
   ]
 }

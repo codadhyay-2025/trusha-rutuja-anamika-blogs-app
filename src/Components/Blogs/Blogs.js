@@ -6,8 +6,7 @@ import axios from "axios";
 function Blogs() {
     const navigate = useNavigate();
     const { id } = useParams();
-    const navigateToCreateNewPost = () =>
-    {
+    const navigateToCreateNewPost = () => {
         navigate("/createnewpost");
     }
     const [blogs, setBlogs] = useState([])
@@ -39,43 +38,42 @@ function Blogs() {
     const handleEdit = (id) => {
         navigate("/createnewpost/" + id);
     };
-    function handleToLike(singleblog){
+    function handleToLike(singleblog) {
         console.log(singleblog);
-        const userslike=localStorage.getItem("userEmail");
+        const userslike = localStorage.getItem("userEmail");
         console.log(userslike);
-        if(singleblog.likes.includes(userslike)){
+        if (singleblog.likes.includes(userslike)) {
 
         }
-        else{
-            const updatedLikes=[...singleblog.likes,userslike]
-            axios.patch("http://localhost:3001/blogs/"+singleblog.id,{likes:updatedLikes})
-            .then(()=>{
-                getAllBlogs();
-            })
-            .catch((error)=>{
-                console.log("failed to likes",error);
-            })
+        else {
+            const updatedLikes = [...singleblog.likes, userslike]
+            axios.patch("http://localhost:3001/blogs/" + singleblog.id, { likes: updatedLikes })
+                .then(() => {
+                    getAllBlogs();
+                })
+                .catch((error) => {
+                    console.log("failed to likes", error);
+                })
         }
     }
-     function handleToDislike(singleblog){
+    function handleToDislike(singleblog) {
         console.log(singleblog);
-        const usersdislike=localStorage.getItem("userEmail");
+        const usersdislike = localStorage.getItem("userEmail");
         console.log(usersdislike);
-        if(singleblog.dislikes.includes(usersdislike)){
+        if (singleblog.dislikes.includes(usersdislike)) {
 
         }
-        else{
-            const updatedDislikes=[...singleblog.dislikes,usersdislike]
-            axios.patch("http://localhost:3001/blogs/"+singleblog.id,{dislikes:updatedDislikes})
-            .then(()=>{
-                getAllBlogs();
-            })
-            .catch((error)=>{
-                console.log("failed to dislikes",error);
-            })
+        else {
+            const updatedDislikes = [...singleblog.dislikes, usersdislike]
+            axios.patch("http://localhost:3001/blogs/" + singleblog.id, { dislikes: updatedDislikes })
+                .then(() => {
+                    getAllBlogs();
+                })
+                .catch((error) => {
+                    console.log("failed to dislikes", error);
+                })
         }
-     }
-
+    }
     return (
         <div className="mainSectionOfBlogsPage">
             <div className='headSectionOfNewPost'>
@@ -105,14 +103,19 @@ function Blogs() {
                         </div>
                         <div className="btnSectionOfBlog">
                             <div className="likeAndDislikeBtn">
-                                <div><button className="thumbsUpIcon" onClick={()=>handleToLike(singleblog)}><i class="fa fa-thumbs-up " aria-hidden="true">{singleblog.likes.length}</i></button></div>
-                                <div><button className="thumbsDownIcon"onClick={()=>handleToDislike(singleblog)}><i class="fa fa-thumbs-down " aria-hidden="true">{singleblog.dislikes.length}</i></button></div>
+                                <div><button className="thumbsUpIcon" onClick={() => handleToLike(singleblog)}><i class="fa fa-thumbs-up " aria-hidden="true">{singleblog.likes.length}</i></button></div>
+                                <div><button className="thumbsDownIcon" onClick={() => handleToDislike(singleblog)}><i class="fa fa-thumbs-down " aria-hidden="true">{singleblog.dislikes.length}</i></button></div>
                             </div>
-                            <div className="likeAndDislikeBtn">
-                                <div><button className="editBtn" onClick={() => handleEdit(singleblog.id)}><i class="fa fa-pencil writingIcon" aria-hidden="true"></i>Edit</button></div>
-                                <div><button className="deleteBtn" onClick={() => handleDelete(singleblog.id)}><i class="fa fa-trash-o writingIcon" aria-hidden="true"></i>Delete</button></div>
+                            {singleblog.CreatedBy === localStorage.getItem("userEmail") ? (
+                                <div className="likeAndDislikeBtn">
+                                    <div><button className="editBtn" onClick={() => handleEdit(singleblog.id)}>
+                                        <i class="fa fa-pencil writingIcon" aria-hidden="true"></i>Edit</button>
+                                    </div>
+                                    <div><button className="deleteBtn" onClick={() => handleDelete(singleblog.id)}>
+                                        <i class="fa fa-trash-o writingIcon" aria-hidden="true"></i>Delete</button>
+                                    </div>
 
-                            </div>
+                                </div>) : null}
                         </div>
                     </div>
                 ))}

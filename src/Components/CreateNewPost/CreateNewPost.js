@@ -38,7 +38,11 @@ function CreateNewPost() {
             .then(() => navigate("/blogs"))
         }
         else {
-            axios.post("http://localhost:3001/blogs/", blogsdata)
+            axios.post("http://localhost:3001/blogs/",
+                {... blogsdata,
+                    CreatedBy:userEmail,
+                    CreatedAt:new Date().toLocaleString()
+                })
                 .then(() => navigate("/blogs"))
         }
     }
