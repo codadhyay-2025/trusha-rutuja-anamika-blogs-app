@@ -25,6 +25,7 @@ function Register() {
         user["name"] = event.target.value
         setUserData(user)
     }
+
     const handleRegistrationData = () => {
         if(userdata.email==="" ||userdata.password===""||userdata.name===""){
                         console.log(userdata);

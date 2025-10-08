@@ -12,9 +12,7 @@ function Login() {
             password: ""
         }
     )
-    
-    
-    
+
     function handlePasswordData(event) {
         let user = { ...loginData };
         user["password"] = event.target.value;
@@ -36,33 +34,35 @@ function Login() {
             console.log(loginData);
             alert("Please Enter Information");
         }
-        
+
         axios.get('http://localhost:3001/users').then((Response) => {
 
             if (Response.status === 200) {
                 console.log("Response", Response);
                 const user = Response.data.find((userInfo) => {
+                    
                     console.log("user", userInfo);
                     console.log("loginData", loginData);
                     if (loginData.email == userInfo.email && loginData.password == userInfo.password) {
                         // console.log("user", user)
                         // console.log(loginData)
                         // navigate("/blogs")
-                        localStorage.setItem("userEmail",loginData.email);
+
                         return userInfo;
-                        
+
                     }
                 })
                 console.log("user", user);
 
                 if (user) {
-                    localStorage.setItem("loginData", JSON.stringify(user))
+                    localStorage.setItem("username", user.name);
+                   
                     navigate("/blogs");
                     // console.log(user)
 
                 }
                 else {
-                    alert("invalid User")
+                    alert("invalid Users")
                     // console.log(user)
 
 
@@ -72,7 +72,6 @@ function Login() {
 
 
         })
-
 
     };
 

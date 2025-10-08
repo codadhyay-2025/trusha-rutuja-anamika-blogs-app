@@ -21,5 +21,11 @@
 .headerRightLinkSection {
     font-size: 15px;
     margin-left: 18px;
+
+}
+.headerUserName{
+    /* margin-right: 10px;  */
+    gap:10px;
+    display: flex;
 }
 
